@@ -90,6 +90,7 @@ def show_polish_word():
         polish_text.insert("1.0", "\n" * padding_top)
         polish_text.insert(END, "\n" * padding_bottom)
         polish_text.config(relief="flat")
+        polish_text.config(state="disabled")
         polish_text.place(x=100, y=120)
     except Exception as e:
         print("Error",e)
